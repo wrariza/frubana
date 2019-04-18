@@ -1,0 +1,29 @@
+{
+  "name": "frubana",
+  "version": "1.0.0",
+  "description": "app gestiona alimentos",
+  "main": "index.js",
+  "repository": "https://github.com/wrariza/frubana",
+  "author": "Ricardo Ariza <skchard09@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "cz-conventional-changelog": "2.1.0",
+    "husky": "^1.3.1",
+    "standard-version": "^5.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
